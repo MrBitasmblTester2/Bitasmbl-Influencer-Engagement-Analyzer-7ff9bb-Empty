@@ -1,0 +1,1 @@
+import React from 'react';import InfluencerComparisonChart from './InfluencerComparisonChart';export default function InfluencerDetailPage({influencer,metrics}:any){return(<div><h1>{influencer.name}</h1><InfluencerComparisonChart data={[metrics]}/></div>);} 
