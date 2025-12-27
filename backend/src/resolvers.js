@@ -1,0 +1,1 @@
+module.exports={Query:{influencer:(_,args)=>({id:args.id,name:'Mock',platform:'instagram'}),influencers:()=>[{id:'1',name:'Mock',platform:'tiktok'}]}};
