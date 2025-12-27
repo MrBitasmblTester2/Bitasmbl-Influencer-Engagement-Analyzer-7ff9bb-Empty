@@ -1,0 +1,1 @@
+import {useQuery,gql} from '@apollo/client';const Q=gql`query{influencers{id name platform}}`;export default function Home(){const{data}=useQuery(Q);return(<main>{data?.influencers?.map((i:any)=>(<div key={i.id}>{i.name}</div>))}</main>);} 
