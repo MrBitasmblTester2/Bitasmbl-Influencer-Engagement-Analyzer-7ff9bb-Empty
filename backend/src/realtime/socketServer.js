@@ -1,0 +1,1 @@
+const {Server}=require('socket.io');function initSocket(httpServer){const io=new Server(httpServer,{cors:{origin:'*'}});io.on('connection',s=>{s.on('joinInfluencer',id=>s.join(id));});return io;}module.exports={initSocket};
