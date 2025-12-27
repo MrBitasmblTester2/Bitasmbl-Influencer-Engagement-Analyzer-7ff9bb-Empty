@@ -1,0 +1,1 @@
+const { gql } = require('apollo-server');module.exports=gql`type Influencer{ id:ID! name:String! platform:String! }type Query{ influencer(id:ID!):Influencer influencers:[Influencer!]! }`;
