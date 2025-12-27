@@ -1,0 +1,1 @@
+function calcEngagement(data){return{engagementRate:0,avgLikes:0,avgComments:0,trends:[]};}module.exports={calcEngagement};
