@@ -1,0 +1,1 @@
+const axios=require('axios');async function fetchInfluencerStats(handle){return {handle,followers:0,posts:[]};}module.exports={fetchInfluencerStats};
