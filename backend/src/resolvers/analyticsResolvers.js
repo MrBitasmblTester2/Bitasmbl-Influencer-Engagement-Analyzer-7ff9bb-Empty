@@ -1,0 +1,1 @@
+const {fetchInfluencerStats}=require('../datasources/socialApiClient');const {calcEngagement}=require('../metrics/engagementCalculator');module.exports={Query:{influencerAnalytics:async(_, {handle})=>{const raw=await fetchInfluencerStats(handle);return calcEngagement(raw);}}};
