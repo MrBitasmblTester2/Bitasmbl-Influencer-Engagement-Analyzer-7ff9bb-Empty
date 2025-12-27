@@ -1,0 +1,1 @@
+import React from 'react';type Props={data:any[]};export default function InfluencerComparisonChart({data}:Props){return(<section><h2>Comparison</h2><pre>{JSON.stringify(data,null,2)}</pre></section>);}
