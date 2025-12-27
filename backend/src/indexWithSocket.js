@@ -1,0 +1,1 @@
+const http=require('http');const app=require('./expressApp');const {initSocket}=require('./realtime/socketServer');const server=http.createServer(app);initSocket(server);server.listen(4000);
