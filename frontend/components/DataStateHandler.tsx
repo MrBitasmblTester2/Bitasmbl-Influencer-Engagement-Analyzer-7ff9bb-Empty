@@ -1,0 +1,1 @@
+import React from 'react';type Props={loading:boolean;error?:any;hasData:boolean;children:React.ReactNode};export default function DataStateHandler({loading,error,hasData,children}:Props){if(loading)return<p>Loading...</p>;if(error)return<p>Error</p>;if(!hasData)return<p>No data</p>;return<>{children}</>;}
