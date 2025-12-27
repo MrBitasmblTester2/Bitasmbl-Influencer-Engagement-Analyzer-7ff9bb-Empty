@@ -1,0 +1,1 @@
+import {useEffect,useState} from 'react';import {io} from 'socket.io-client';export function useLiveInfluencerMetrics(id:string){const[data,setData]=useState(null);useEffect(()=>{const s=io('http://localhost:4000');s.emit('joinInfluencer',id);s.on('metrics',setData);return()=>{s.disconnect();};},[id]);return data;}
