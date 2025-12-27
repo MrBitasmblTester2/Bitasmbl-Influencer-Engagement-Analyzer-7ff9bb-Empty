@@ -1,0 +1,1 @@
+import React from 'react';type Props={onChange:(v:any)=>void};export default function FiltersBar({onChange}:Props){return(<form onChange={e=>onChange({})}><input placeholder="Search"/></form>);}
